@@ -1,0 +1,41 @@
+
+@import "tailwindcss";
+
+@font-face {
+    font-family: Work-sans-bold;
+    src: url(/assets/fonts/static/WorkSans-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Work-sans-semibold;
+    src: url(/assets/fonts/static/WorkSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Work-sans-regular;
+    src: url(/assets/fonts/static/WorkSans-Regular.ttf);
+}
+
+
+
+@theme {
+    --font-work-bold: Work-sans-bold;
+    --font-work-semibold: Work-sans-semibold;
+    --font-work-regular: Work-sans-regular;
+
+}
+
+.font-md {
+    font-size: 16px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@layer components {
+    .faq-ans {
+        @apply font-work-regular text-stone-500;
+    }
+}
+
+
